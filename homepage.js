@@ -3,7 +3,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBaeqe_--Me5w9mTz0jnEMqlAqwm63Le7A", // Replace with your actual API key
+    apiKey: "process.env.GOOGLE_API_KEY", // Replace with your actual API key
     authDomain: "davetech-movie-management.firebaseapp.com",
     projectId: "davetech-movie-management",
     storageBucket: "davetech-movie-management.firebasestorage.app",
