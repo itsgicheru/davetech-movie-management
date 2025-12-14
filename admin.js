@@ -1,5 +1,6 @@
 // Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
+import { GOOGLE_API_KEY } from './config.js';
 import { 
     getAuth, 
     onAuthStateChanged, 
@@ -16,7 +17,7 @@ import {
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "process.env.GOOGLE_API_KEY",
+    apiKey: GOOGLE_API_KEY,
     authDomain: "davetech-movie-management.firebaseapp.com",
     projectId: "davetech-movie-management",
     storageBucket: "davetech-movie-management.appspot.com",

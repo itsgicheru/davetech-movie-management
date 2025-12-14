@@ -1,9 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-auth.js";
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
+import { GOOGLE_API_KEY } from './config.js';
 
 const firebaseConfig = {
-    apiKey: "process.env.GOOGLE_API_KEY", // Replace with your actual API key
+    apiKey: GOOGLE_API_KEY, // Replace with your actual API key
     authDomain: "davetech-movie-management.firebaseapp.com",
     projectId: "davetech-movie-management",
     storageBucket: "davetech-movie-management.firebasestorage.app",
@@ -107,4 +108,3 @@ ball.addEventListener("click", () => {
   });
   ball.classList.toggle("active");
 });
-
