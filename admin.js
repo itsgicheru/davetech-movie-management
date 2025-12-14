@@ -16,7 +16,7 @@ import {
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBaeqe_--Me5w9mTz0jnEMqlAqwm63Le7A",
+    apiKey: "process.env.GOOGLE_API_KEY",
     authDomain: "davetech-movie-management.firebaseapp.com",
     projectId: "davetech-movie-management",
     storageBucket: "davetech-movie-management.appspot.com",
